@@ -1,0 +1,8 @@
+# dependencies
+node_modules/
+
+# buildinfo
+tsconfig.tsbuildinfo
+
+# js files
+dist/
