@@ -13,9 +13,10 @@ function createHuman(): Hero {
 
 console.log(new Human(createHuman()));
 
-let animal = new Animal('dog');
-console.log(animal.name);
-animal.onNameChanged(name => {
-	console.log(`name is changed to ${name}`);
-});
-animal.name = 'cat';
+let dog = new Animal('dog');
+let cat = new Animal('cat');
+setTimeout(() => {
+	console.log('timeout finished');
+	dog.name = 'dog2';
+	cat.name = 'cat2';
+}, 3000);
