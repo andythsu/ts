@@ -1,13 +1,8 @@
 import { Hero } from './interfaces';
-import { Human } from './models';
+import { Animal, Human } from './models';
 
 let message: string = 'hello world';
 console.log(message);
-
-let hero: Hero = {
-	name: 'hero1',
-	age: 10
-};
 
 function createHuman(): Hero {
 	return {
@@ -17,3 +12,10 @@ function createHuman(): Hero {
 }
 
 console.log(new Human(createHuman()));
+
+let animal = new Animal('dog');
+console.log(animal.name);
+animal.onNameChanged(name => {
+	console.log(`name is changed to ${name}`);
+});
+animal.name = 'cat';

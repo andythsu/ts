@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "nodemon": "^2.0.2",
+    "typed-event-emitter": "^2.0.0",
     "typescript": "^3.7.5"
   }
 }
