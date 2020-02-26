@@ -9,7 +9,7 @@ export class Animal extends EventEmitter {
 		super();
 		this._name = name;
 		this.onNameChanged(name => {
-			console.log(`new name ${name}`);
+			console.log(`new name: ${name}`);
 		});
 	}
 
