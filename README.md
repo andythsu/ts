@@ -4,7 +4,13 @@
 installs necessary dependencies
 
 ### `npm run ts-watch`
-starts the typescript in watch mode
+Transpiles ts files in real time and saves the files into `dist/`
 
 ### `npm run start`
-starts the app
+Runs `dist/index.js`
+
+### `npm run hot-reload`
+Hot-reloads `dist/index.js`
+
+### `npm run prettify`
+Prettify `src/`
